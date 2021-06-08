@@ -14,8 +14,8 @@ spring:
         jdbc.batch_size: 20
   datasource:
     # ImMemory
-    url: jdbc:h2:mem:topjava
-    #    tcp: jdbc:h2:tcp://localhost:9092/mem:topjava
+    url: jdbc:h2:mem:calories_manager
+    #    tcp: jdbc:h2:tcp://localhost:9092/mem:calories_manager
     username: sa
     password:
   h2.console.enabled: true
@@ -36,7 +36,7 @@ spring:
 logging:
   level:
     root: WARN
-    ru.javaops.topjava: DEBUG
+    com.artfil: DEBUG
     org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver: DEBUG
 
 server.servlet:
